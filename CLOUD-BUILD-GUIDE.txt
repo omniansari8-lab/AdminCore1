@@ -1,0 +1,23 @@
+ADMINCORE 3.0.0 — CLOUD BUILD (NO TERMUX)
+
+This project includes a GitHub Actions workflow to compile the plugin remotely.
+The Paper API dependency is set to Paper 26.1.2 build 60 stable.
+
+WHAT YOU NEED
+- A GitHub account.
+- Connect the GitHub integration in ChatGPT if you want help publishing the project.
+- No Termux or local Java installation is needed.
+
+MANUAL BROWSER BUILD
+1. Create a new GitHub repository.
+2. Upload the contents of this ZIP to the repository (not the ZIP file itself).
+3. Open the repository's Actions tab.
+4. Select "Build AdminCore" and press "Run workflow".
+5. Wait for the run to finish successfully.
+6. Open the completed run and download the "AdminCore-3.0.0-JAR" artifact.
+7. Extract the downloaded artifact ZIP; it contains AdminCore-3.0.0.jar.
+
+IMPORTANT
+This is a cloud-build-ready source project, not the compiled plugin JAR.
+The workflow still needs to run successfully before a JAR is produced.
+Test the resulting JAR on a backup/test server before using it on your main server.
